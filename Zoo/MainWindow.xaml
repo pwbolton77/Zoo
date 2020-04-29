@@ -5,9 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Zoo"
         mc:Ignorable="d"
-        Title="Zoo" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="307,190,0,0" VerticalAlignment="Top" Width="75" Background="#FFC827E2"/>
+        Title="Zoo" Height="604" Width="800">
+    <!--<Frame x:Name="MyFrame" Content="Frame" HorizontalAlignment="Left" Height="384" Margin="100,100,0,0" VerticalAlignment="Top" Width="561"/>-->
+    <Frame x:Name="MyFrame" Content="Frame" HorizontalAlignment="Left" VerticalAlignment="Top" NavigationUIVisibility="Hidden" />
 
-    </Grid>
 </Window>

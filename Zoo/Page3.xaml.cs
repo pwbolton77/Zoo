@@ -16,21 +16,18 @@ using System.Windows.Shapes;
 namespace Zoo
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page3 : Page
     {
-        public MainWindow()
+        public Page3()
         {
             InitializeComponent();
-
-            Loaded += MyWindow_Loaded;
         }
 
-        private void MyWindow_Loaded(object sender, RoutedEventArgs e)
+        private void Page3PreviousButton_Click(object sender, RoutedEventArgs e)
         {
-            MyFrame.NavigationService.Navigate(new Page1());
+            this.NavigationService.Navigate(new Page2());
         }
-
     }
 }

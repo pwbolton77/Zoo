@@ -1,0 +1,16 @@
+﻿<Page x:Class="Zoo.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Zoo"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid Background="LightBlue">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Page Two" VerticalAlignment="Top"/>
+        <Button x:Name="Page2NextButton" Click="Page2NextButton_Click" Content="Next" HorizontalAlignment="Left" Margin="329,334,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Page2PreviousButton" Click="Page2PreviousButton_Click" Content="Previous" HorizontalAlignment="Left" Margin="218,334,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Page>
