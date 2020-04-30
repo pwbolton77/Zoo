@@ -8,8 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid Background="White">
+    <Grid Background="LightYellow">
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Page One" VerticalAlignment="Top"/>
-        <Button x:Name="Page1NextButton" Click="Page1NextButton_Click" Content="Next" HorizontalAlignment="Left" Margin="329,334,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Page>

@@ -20,17 +20,31 @@ namespace Zoo
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Page1 Page1 { get; set; }
+        public Page2 Page2 { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            Page1 = new Page1();
+            Page2 = new Page2();
 
             Loaded += MyWindow_Loaded;
         }
 
         private void MyWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            MyFrame.NavigationService.Navigate(new Page1());
+            MainFrame.NavigationService.Navigate(Page1);
         }
 
+        private void PageOneButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(Page1);
+        }
+
+        private void PageTwoButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(Page2);
+        }
     }
 }

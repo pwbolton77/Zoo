@@ -24,10 +24,5 @@ namespace Zoo
         {
             InitializeComponent();
         }
-
-        private void Page1NextButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Page2());
-        }
     }
 }

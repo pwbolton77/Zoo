@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:Zoo"
         mc:Ignorable="d"
         Title="Zoo" Height="604" Width="800">
-    <!--<Frame x:Name="MyFrame" Content="Frame" HorizontalAlignment="Left" Height="384" Margin="100,100,0,0" VerticalAlignment="Top" Width="561"/>-->
-    <Frame x:Name="MyFrame" Content="Frame" HorizontalAlignment="Left" VerticalAlignment="Top" NavigationUIVisibility="Hidden" />
-
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0" Background="Coral" x:Name="MainFrame" Content="Frame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" NavigationUIVisibility="Hidden" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button x:Name="PageOneButton"  Content="Page One" Margin="10" Click="PageOneButton_Click"/>
+            <Button x:Name="PageTwoButton"  Content="Page Two" Margin="10" Click="PageTwoButton_Click"/>
+        </StackPanel>
+    </Grid>
 </Window>

@@ -8,9 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
 
-    <Grid Background="LightBlue">
+    <Grid Width="Auto" Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Page Two" VerticalAlignment="Top"/>
-        <Button x:Name="Page2NextButton" Click="Page2NextButton_Click" Content="Next" HorizontalAlignment="Left" Margin="329,334,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Page2PreviousButton" Click="Page2PreviousButton_Click" Content="Previous" HorizontalAlignment="Left" Margin="218,334,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Page>
